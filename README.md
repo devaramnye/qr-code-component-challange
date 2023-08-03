@@ -80,11 +80,6 @@ body {
     color:  hsl(220, 15%, 55%);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
 ### Continued development
 
