@@ -40,9 +40,9 @@ I learned today that I should avoid setting heights in my CSS as it loses respon
 
 ```html
 <body>
-  <div class="block">
-    <div class="content">
-      <img src="images/image-qr-code.png" alt="QR-Code picture">
+  <div class="parent">
+    <div class="children">
+      <img src="./images/image-qr-code.png" alt="QR-Code picture">
       <h1>Improve your front-end skills by building projects</h1>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
@@ -56,28 +56,44 @@ body {
     margin: 0;
     background: hsl(212, 45%, 89%);
     font-family: Outfit;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
-.block {
+.parent {
     width: 375px;
     margin: 0 auto;
     background: hsl(0, 0%, 100%);
-    padding: 1rem;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
-.content > img {
+.parent {
+    padding: 1rem;
+}
+
+.children > img {
     width: 100%;
     border-radius: 15px;
 }
 
-.content > h1, p {
+.children > h1, p {
     text-align: center;
+    padding: 0 1rem;
 }
 
-.content > p {
+.children > h1 {
+    color: hsl(218, 44%, 22%);
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.children > p {
     font-size: 15px;
     color:  hsl(220, 15%, 55%);
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 ```
 
