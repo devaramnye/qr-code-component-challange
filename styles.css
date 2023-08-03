@@ -16,20 +16,33 @@ body {
     width: 375px;
     margin: 0 auto;
     background: hsl(0, 0%, 100%);
-    padding: 1rem;
     border-radius: 20px;
+}
+
+.content {
+    padding: 1rem;
 }
 
 .content > img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .content > h1, p {
     text-align: center;
+    padding: 0 1rem;
+}
+
+.content > h1 {
+    color: hsl(218, 44%, 22%);
+    font-size: 27px;
+    font-weight: 800;
 }
 
 .content > p {
     font-size: 15px;
     color:  hsl(220, 15%, 55%);
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
