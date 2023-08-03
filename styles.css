@@ -1,1 +1,29 @@
+* { box-sizing: border-box; }
 
+body {
+    margin: 0;
+    background: hsl(212, 45%, 89%);
+    font-family: Outfit;
+}
+
+.block {
+    width: 375px;
+    margin: 0 auto;
+    background: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.content > img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.content > h1, p {
+    text-align: center;
+}
+
+.content > p {
+    font-size: 15px;
+    color:  hsl(220, 15%, 55%);
+}
