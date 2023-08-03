@@ -35,7 +35,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-I learned today that I should avoid settings heights in my CSS as it loses responsivness. I tryed to start with Mobile-first workFlow but I still have some issues understanding if my current work is really Mobile-first workFlow
+I learned today that I should avoid setting heights in my CSS as it loses responsivness. I tryed to start with Mobile-first workFlow but I still have some issues in understanding if my current work is really Mobile-first workFlow. Using percentage in widths in relative to the parent is a good way to work responsive.
 
 
 ```html
