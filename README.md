@@ -35,18 +35,18 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-I learned today that I should avoid setting heights in my CSS as it loses responsivness. I tryed to start with Mobile-first workFlow but I still have some issues in understanding if my current work is really Mobile-first workFlow. Using percentage in widths in relative to the parent is a good way to work responsive.
+I learned today that I should avoid setting heights in my CSS as it loses responsivness. I tryed to start with Mobile-first workFlow but I still have some issues in understanding if my current work is really Mobile-first workFlow. Using percentage in widths in relative to the parent is a good way to work responsive. I learned from Grace-Snow to use (rem) for max-width as it makes better experience for user who change their device/browser font-size. As well I learned to never use px for font-size, so in this project and in the future I will use rem for font-size. I played a little abit with margin and padding which gave me a deeper dive of understanding.
 
 
 ```html
 <body>
-  <div class="parent">
-    <div class="children">
-      <img src="./images/image-qr-code.png" alt="QR-Code picture">
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
-  </div>
+  <main>
+    <div class="qr-card">
+      <img class="qr-code" src="./images/image-qr-code.png" alt="a QR-Code which brings you to frontend-mentor page">
+      <h1 class="heading">Improve your front-end skills by building projects</h1>
+      <p class="paragraph">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+   </div>
+  </main>
 </body>
 ```
 ```css
@@ -55,45 +55,39 @@ I learned today that I should avoid setting heights in my CSS as it loses respon
 body {
     margin: 0;
     background: hsl(212, 45%, 89%);
-    font-family: Outfit;
+    font-family: "Outfit", sans-serif;
     min-height: 100vh;
     display: grid;
     place-content: center;
 }
 
-.parent {
-    width: 375px;
-    margin: 0 auto;
+main {
+    max-width: 18rem;
+    margin: 1rem auto;
     background: hsl(0, 0%, 100%);
     border-radius: 20px;
-}
-
-.parent {
     padding: 1rem;
 }
 
-.children > img {
+.qr-code {
     width: 100%;
     border-radius: 15px;
 }
 
-.children > h1, p {
+.heading, .paragraph {
     text-align: center;
-    padding: 0 1rem;
 }
 
-.children > h1 {
+.heading {
     color: hsl(218, 44%, 22%);
-    font-size: 27px;
     font-weight: 800;
+    font-size: 1.25rem;
 }
 
-.children > p {
-    font-size: 15px;
+.paragraph {
+    font-size: 0.9rem;
     color:  hsl(220, 15%, 55%);
-    padding-bottom: 1rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    margin: 0 0.1rem;
 }
 ```
 
