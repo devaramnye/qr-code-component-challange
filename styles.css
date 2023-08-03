@@ -6,6 +6,11 @@ body {
     font-family: Outfit;
 }
 
+.grid {
+    display: grid;
+    place-content: center;
+}
+
 .block {
     width: 375px;
     margin: 0 auto;
