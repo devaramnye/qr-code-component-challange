@@ -35,7 +35,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-I learned today that I should avoid setting heights in my CSS as it loses responsivness. I tryed to start with Mobile-first workFlow but I still have some issues in understanding if my current work is really Mobile-first workFlow. Using percentage in widths in relative to the parent is a good way to work responsive. I learned from Grace-Snow to use (rem) for max-width as it makes better experience for user who change their device/browser font-size. As well I learned to never use px for font-size, so in this project and in the future I will use rem for font-size. I played a little abit with margin and padding which gave me a deeper dive of understanding.
+I learned today that I should avoid setting heights in my CSS as it loses responsivness. I tryed to start with Mobile-first workFlow. Using percentage in widths in relative to the parent is a good way to work responsive. I learned from Grace-Snow to use (rem) for max-width as it makes better experience for user who change their device/browser font-size. As well I learned to never use px for font-size, so in this project and in the future I will use rem for font-size. I played a little abit with margin and padding which gave me a deeper dive of understanding.
 
 
 ```html
@@ -93,4 +93,4 @@ main {
 
 ### Continued development
 
-I am currently working on responsive coding. Currently doing the 21 challange from Kevinpowell. Day one started (03.08.2023) and already day one helped me extremly by understanding that CSS is responsive by default and we are mainly causing the problems of the responsive threatment of CSS.
+I am currently working on responsive coding. Currently doing the 21 challange from Kevinpowell. Day one started (03.08.2023) and already day one helped me extremly by understanding that CSS is responsive by default and we are mainly causing the problems of the responsive threatment of CSS. I will continue working on my knowledge of grid and flexbox.
